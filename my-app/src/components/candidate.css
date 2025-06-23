@@ -1,0 +1,97 @@
+:root {
+    --candidate-name-color: #007bff;
+    --candidate-description-color: #000000;
+    --candidate-background-color: #c6d8f0;
+}
+
+
+.candidate__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 40px 18px;
+    border-radius: 8px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 360px;
+    border: 1px solid #bbbbbb8b;
+    box-sizing: border-box;
+    background-color: var(--candidate-background-color);
+}
+
+
+.candidate__container > p, .candidate__skills > p, .candidate__skills > ul{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--candidate-description-color);
+    margin: 0;
+    padding: 0;
+}
+
+.candidate__name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--candidate-text-color);
+    width: 100%;
+    height: 4rem;
+}
+
+.candidate__name > h2{
+    color: var(--candidate-name-color);
+}
+
+.candidate__skills{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    
+}
+
+.candidate__skills > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.candidate__actions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.candidate__action:hover{
+    background-color: #ffffff;
+    color: var(--candidate-name-color);
+    border: 1px solid var(--candidate-name-color);
+}
+
+.candidate__action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #ffffff8b;
+    border-radius: 8px;
+    background-color: var(--candidate-name-color);
+    color: rgb(255, 247, 6);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
